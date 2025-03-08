@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: gray;
+            object-fit: cover;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: 12px;
+        }
+        .profile-info strong {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="relative">
+        <div class="bg-gradient-to-r from-orange-400 to-yellow-400 h-24 flex items-center justify-between px-4">
+            <div class="text-white text-3xl">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="profile">
+                <img src="https://storage.googleapis.com/a1aa/image/0qIZTQoLjueBvDVpi8QsN_OFOABd9EZb726eVmhs2FM.jpg" alt="Profile Pic">
+                <div class="profile-info">
+                    <strong>Akshay Syal</strong>
+                    <span>Class XI-B</span>
+                    <span>Roll no: 04</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-16">
+            <img alt="Support representative with headset" class="w-40 h-40" height="150" src="https://storage.googleapis.com/a1aa/image/anTg2whgPoKviJY4ZSd2udotGv1gh1upqRAjzesCYUM.jpg" width="150"/>
+            <h1 class="text-2xl font-semibold mt-4">Get Support</h1>
+            <p class="text-center text-gray-600 mt-4 px-4">
+                For any support request regarding your orders or deliveries, please feel free to speak with us below.
+            </p>
+        </div>
+        <footer class="text-center mt-16 mb-8">
+            <p class="font-semibold text-lg mb-4">Contact Us</p>
+            <p class="text-gray-700 mt-4 mb-4">📞 Call us - +91 7383XXXXXX</p>
+            <p class="text-gray-700 mt-4 mb-4">📧 Mail us - syalfreelance@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>

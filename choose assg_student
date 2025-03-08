@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Assignment</title>    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(to right, #ff8000, #ffa64d);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .profile {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 180px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: gray;
+            object-fit: cover;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: 12px;
+        }
+        .profile-info strong {
+            font-size: 14px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .dropdown span {
+            background: orange;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown div {
+            margin-left: auto;
+            padding-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn {
+            background: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">&#9776;</div>
+        <div class="profile">
+            <img src="https://storage.googleapis.com/a1aa/image/0qIZTQoLjueBvDVpi8QsN_OFOABd9EZb726eVmhs2FM.jpg" alt="Profile Pic">
+            <div class="profile-info">
+                <strong>Akshay Syal</strong>
+                <span>Class XI-B</span>
+                <span>Roll no: 04</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Choose Assignment</h2>
+        <div class="dropdown">
+            <span>Semester</span>
+            <div>▼</div>
+        </div>
+        <div class="dropdown">
+            <span>Subject</span>
+            <div>▼</div>
+        </div>
+        <div class="dropdown">
+            <span>Unit Number</span>
+            <div>▼</div>
+        </div>
+        <button class="btn">Upload PDF 📂</button>
+    </div>
+</body>
+</html>

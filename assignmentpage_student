@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(to right, #ff8000, #ffa64d);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .profile {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: gray;
+            object-fit: cover;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: 12px;
+        }
+        .profile-info strong {
+            font-size: 14px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .subject {
+            background: orange;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .btn {
+            background: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:disabled {
+            background: gray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">&#9776;</div>
+        <div class="profile">
+            <img src="https://storage.googleapis.com/a1aa/image/0qIZTQoLjueBvDVpi8QsN_OFOABd9EZb726eVmhs2FM.jpg" alt="Profile Pic">
+            <div class="profile-info">
+                <strong>Akshay Syal</strong>
+                <span>Class XI-B</span>
+                <span>Roll no: 04</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <span class="subject">Mathematics</span>
+            <h3>Surface Areas and Volumes</h3>
+            <p>Assign Date: 10 Nov 20</p>
+            <p>Last Submission Date: 10 Dec 20</p>
+            <button class="btn" onclick="submitAssignment(this)">TO BE SUBMITTED</button>
+        </div>
+        <div class="card">
+            <span class="subject">Science</span>
+            <h3>Structure of Atoms</h3>
+            <p>Assign Date: 10 Oct 20</p>
+            <p>Last Submission Date: 30 Oct 20</p>
+            <button class="btn" onclick="submitAssignment(this)">TO BE SUBMITTED</button>
+        </div>
+        <div class="card">
+            <span class="subject">English</span>
+            <h3>My Bestfriend Essay</h3>
+            <p>Assign Date: 10 Sep 20</p>
+            <p>Last Submission Date: 30 Sep 20</p>
+            <button class="btn" onclick="submitAssignment(this)">TO BE SUBMITTED</button>
+        </div>
+    </div>
+    <script>
+        function submitAssignment(button) {
+            button.innerText = "SUBMITTED";
+            button.disabled = true;
+        }
+    </script>
+</body>
+</html>

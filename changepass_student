@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password For Student</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(to right, #ff8000, #ffa64d);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .input-group {
+            width: 80%;
+            max-width: 500px;
+            text-align: left;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .input-group label {
+            color: orange;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid orange;
+            padding: 10px;
+            background: transparent;
+            font-size: 16px;
+            outline: none;
+        }
+        .eye-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+            color: gray;
+        }
+        .btn {
+            background: orange;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background: #e67300;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">&#9776;</div>
+    </div>
+    <div class="container">
+        <h2>Change Password</h2>
+        <div class="input-group">
+            <label>Old Password</label>
+            <input type="password" id="oldPassword">
+            <span class="material-icons eye-icon" onclick="togglePassword('oldPassword', this)">visibility</span>
+        </div>
+        <div class="input-group">
+            <label>New Password</label>
+            <input type="password" id="newPassword">
+            <span class="material-icons eye-icon" onclick="togglePassword('newPassword', this)">visibility</span>
+        </div>
+        <div class="input-group">
+            <label>Retype Password</label>
+            <input type="password" id="confirmPassword">
+            <span class="material-icons eye-icon" onclick="togglePassword('confirmPassword', this)">visibility</span>
+        </div>
+        <button class="btn">CHANGE PASSWORD</button>
+    </div>
+
+    <script>
+        function togglePassword(fieldId, eyeIcon) {
+            var input = document.getElementById(fieldId);
+            if (input.type === "password") {
+                input.type = "text";
+                eyeIcon.textContent = "visibility_off"; // Change icon to 'visibility_off'
+            } else {
+                input.type = "password";
+                eyeIcon.textContent = "visibility"; // Change back to 'visibility'
+            }
+        }
+    </script>
+</body>
+</html>

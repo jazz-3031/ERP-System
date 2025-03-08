@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-lg bg-white rounded-lg shadow-lg">
+        <!-- Header Section -->
+        <div class="relative">
+            <div class="bg-gradient-to-r from-orange-500 to-orange-300 h-20 rounded-t-lg flex items-center px-4">
+                <i class="fas fa-bars text-white text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="text-center mt-4">
+            <h2 class="text-2xl font-bold text-black"></h2>
+        </div>
+
+        <!-- Form Section -->
+        <div class="p-6">
+            <form>
+                <!-- New Password -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-orange-500">New Password</label>
+                    <div class="relative">
+                        <input id="new-password" type="password" class="w-full border-b-2 border-orange-400 outline-none p-2 text-lg">
+                        <span onclick="togglePassword('new-password', 'eye1')" class="absolute right-2 top-2 cursor-pointer">
+                            <i id="eye1" class="fas fa-eye text-gray-500"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Retype Password -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-orange-500">Retype Password</label>
+                    <div class="relative">
+                        <input id="retype-password" type="password" class="w-full border-b-2 border-orange-400 outline-none p-2 text-lg">
+                        <span onclick="togglePassword('retype-password', 'eye2')" class="absolute right-2 top-2 cursor-pointer">
+                            <i id="eye2" class="fas fa-eye text-gray-500"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Change Password Button -->
+                <div class="text-center">
+                    <button class="bg-orange-500 text-white text-lg font-semibold py-2 px-6 rounded-md hover:bg-orange-600">
+                        CHANGE PASSWORD
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword(inputId, eyeId) {
+            const input = document.getElementById(inputId);
+            const eyeIcon = document.getElementById(eyeId);
+            if (input.type === "password") {
+                input.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

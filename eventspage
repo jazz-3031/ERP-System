@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: gray;
+            object-fit: cover;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: 12px;
+        }
+        .profile-info strong {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="relative">
+        <div class="bg-gradient-to-r from-orange-400 to-yellow-400 h-24 flex items-center justify-between px-4">
+            <div class="text-white text-3xl">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="profile">
+                <img src="https://storage.googleapis.com/a1aa/image/0qIZTQoLjueBvDVpi8QsN_OFOABd9EZb726eVmhs2FM.jpg" alt="Profile Pic">
+                <div class="profile-info">
+                    <strong>Akshay Syal</strong>
+                    <span>Class XI-B</span>
+                    <span>Roll no: 04</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-32 left-0 right-0 bg-white rounded-t-3xl p-6 mt-6">
+            <div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 mb-20">
+                    <img src="https://kidsfunpark.ch/wp-content/uploads/2022/10/Sleepover_Party_Leopard_Glam_Geneve.jpg" class="rounded-lg w-32 h-32">
+                    <div>
+                        <div class="text-xl font-semibold">Sleepover Night</div>
+                        <div class="text-yellow-500 flex items-center space-x-2 mt-2">
+                            <i class="fas fa-eye"></i>
+                            <span>06 Jan 21, 09:00 AM</span>
+                        </div>
+                        <div class="text-gray-600 mt-3 text-lg">
+                            A sleepover is a great treat for kids. Many schools use such an event as the culminating activity of the school year.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 mb-20">
+                    <img src="https://masterbundles.com/wp-content/uploads/2023/11/fish-tournament-logo-vector-design-collection-2-415.jpg" class="rounded-lg w-32 h-32">
+                    <div>
+                        <div class="text-xl font-semibold">Fishing Tournament</div>
+                        <div class="text-yellow-500 flex items-center space-x-2 mt-2">
+                            <i class="fas fa-eye"></i>
+                            <span>12 Jan 21, 09:00 AM</span>
+                        </div>
+                        <div class="text-gray-600 mt-3 text-lg">
+                            Silver Sands Middle School in Port Orange, Florida, offers many special events, but one of the most unique ones is a springtime...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 mb-20">
+                    <img src="https://www.theglobeandmail.com/ece-images/611/life/facts-and-arguments/article30755217.ece/BINARY/w940/image.jpg" class="rounded-lg w-32 h-32">
+                    <div>
+                        <div class="text-xl font-semibold">Rhyme Time: A Night of Poetry</div>
+                        <div class="text-yellow-500 flex items-center space-x-2 mt-2">
+                            <i class="fas fa-eye"></i>
+                            <span>24 Jan 21, 09:00 AM</span>
+                        </div>
+                        <div class="text-gray-600 mt-3 text-lg">
+                            April is also National Poetry Month. Now there is a great theme for a fun family night! Combine poetry readings by students...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

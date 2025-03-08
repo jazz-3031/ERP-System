@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(to right, #ff8000, #ffa64d);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .profile {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: gray;
+            object-fit: cover;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: 12px;
+        }
+        .profile-info strong {
+            font-size: 14px;
+        }
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown {
+            background: orange;
+            padding: 15px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 500px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 30px; /* Adds space between Internal and External */
+        }
+        .dropdown span {
+            margin-left: 20px;
+        }
+        .btn {
+            background: orange;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background: #e67300;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">&#9776;</div>
+        <div class="profile">
+            <img src="https://storage.googleapis.com/a1aa/image/0qIZTQoLjueBvDVpi8QsN_OFOABd9EZb726eVmhs2FM.jpg" alt="Profile Pic">
+            <div class="profile-info">
+                <strong>Akshay Syal</strong>
+                <span>Class XI-B</span>
+                <span>Roll no: 04</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Choose Result</h2>
+        <div class="dropdown">
+            <span>Internal</span>
+            <div>▼</div>
+        </div>
+        <div class="dropdown">
+            <span>External</span>
+            <div>▼</div>
+        </div>
+        <button class="btn">DOWNLOAD PDF 📂</button>
+    </div>
+</body>
+</html>
